@@ -41,39 +41,20 @@ const jagData = [ {
 
 const button1 = document.getElementsByClassName("myButton1")[0];
 const paragraphArea = document.getElementsByClassName("paragraph")[0];
+const move1 = () => move(tesData);
+const move2 = () => move(jagData);
 
-function move(){
+function move(carData){
   paragraphArea.innerHTML = "";
-  for(let i = 0; i < tesData.length; i++){
+  for(let i = 0; i < carData.length; i++){
     var tesTitle = document.createElement("h1");
-    tesTitle.innerHTML = tesData[i].title;
+    tesTitle.innerHTML = carData[i].title;
     var tesImage = document.createElement("img");
-    tesImage.setAttribute('src', tesData[i].img);
+    tesImage.setAttribute('src', carData[i].img);
     tesImage.setAttribute('width', '300px');
     tesImage.setAttribute('height', 'auto');
     var tesCopy = document.createElement("p");
-    tesCopy.innerHTML = tesData[i].copy;
-    var tesDiv = document.createElement("div");
-
-    tesDiv.appendChild(tesTitle);
-    tesDiv.appendChild(tesImage);
-    tesDiv.appendChild(tesCopy);
-    tesDiv.class = "hello";
-    paragraphArea.appendChild(tesDiv);
-    }
-}
-
-function move2(){
-  paragraphArea.innerHTML = "";
-  for(let i = 0; i < jagData.length; i++){
-    var tesTitle = document.createElement("h1");
-    tesTitle.innerHTML = jagData[i].title;
-    var tesImage = document.createElement("img");
-    tesImage.setAttribute('src', jagData[i].img);
-    tesImage.setAttribute('width', '300px');
-    tesImage.setAttribute('height', 'auto');
-    var tesCopy = document.createElement("p");
-    tesCopy.innerHTML = jagData[i].copy;
+    tesCopy.innerHTML = carData[i].copy;
     var tesDiv = document.createElement("div");
 
     tesDiv.appendChild(tesTitle);
