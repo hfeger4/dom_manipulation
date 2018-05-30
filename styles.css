@@ -1,0 +1,33 @@
+.main{
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-buttons{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.paragraph{
+  width: 400px;
+  height: 300px;
+}
+
+.my_button1{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.my_button2{
+  margin-left: 30px;
+}
+
+.hello{
+  justify-content: center;
+}
